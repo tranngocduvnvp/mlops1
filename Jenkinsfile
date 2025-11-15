@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIAL_ID = 'docker-token'
+        DOCKERHUB_CREDENTIAL_ID = 'docker-hub-token'
         DOCKERHUB_REGISTRY = 'https://registry.hub.docker.com'
         DOCKERHUB_REPOSITORY = 'tranngocduhust1234/mlops1'
     }
