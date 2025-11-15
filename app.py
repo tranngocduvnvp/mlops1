@@ -17,7 +17,7 @@ with open(MODEL_PATH, "rb") as f:
 # Home route to display the form
 @app.route("/")
 def home():
-    return render_template("index.html"
+    return render_template("index.html")
 
 
 # Prediction route to handle form submissions
