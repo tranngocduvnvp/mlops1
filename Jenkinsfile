@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    // environment {
-    //     DOCKERHUB_CREDENTIAL_ID = 'mlops-jenkins-dockerhub-token'
-    //     DOCKERHUB_REGISTRY = 'https://registry.hub.docker.com'
-    //     DOCKERHUB_REPOSITORY = 'juianba/mlops-jenkins-01'
-    // }
+    environment {
+        // DOCKERHUB_CREDENTIAL_ID = 'mlops-jenkins-dockerhub-token'
+        DOCKERHUB_REGISTRY = 'https://registry.hub.docker.com'
+        DOCKERHUB_REPOSITORY = 'tranngocduhust1234/mlops1'
+    }
     stages {
         stage('Clone Repository') {
             steps {
@@ -50,7 +50,7 @@ pipeline {
                 // Build Docker Image
                 script {
                     echo 'Building Docker Image...'
-                    // dockerImage = docker.build("${DOCKERHUB_REPOSITORY}:latest") 
+                    dockerImage = docker.build("${DOCKERHUB_REPOSITORY}:latest") 
                 }
             }
         }
