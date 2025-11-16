@@ -40,6 +40,7 @@ Run `python train.py` to generate the model, then `python app.py` to test locall
 ```
 docker run -d --name jenkins-dind --privileged -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home jenkins-dind
 ```
+haha
 ## Resources
 
 - [Medium Article](https://medium.com/@jushijun/automating-ml-model-deployment-a-ci-cd-pipeline-with-jenkins-docker-and-aws-ecs-a7473c4cb92e): Detailed project walkthrough.
