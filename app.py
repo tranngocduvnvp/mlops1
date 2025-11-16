@@ -34,7 +34,7 @@ def predict():
         "index.html", prediction_text=f"Predicted Iris Class: {prediction}"
     )
 
-print("oke")
+print("oke!!")
 
 
 if __name__ == "__main__":
