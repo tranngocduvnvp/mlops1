@@ -12,6 +12,7 @@ pipeline {
                 script {
                     echo 'Cloning GitHub Repo...'
                     // checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'mlops-test-token', url: 'https://github.com/tranngocduvnvp/mlops1.git']])
+                    sh "cat temps.txt"
                 }
             }
         }
